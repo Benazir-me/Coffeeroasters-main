@@ -1,0 +1,156 @@
+.my-plane {
+    padding-top: 159px;
+    padding-bottom: 168px;
+}
+
+.my-plane-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.my-plane-left {
+    margin-right: 125px;
+}
+
+.plane-list {
+    width: 255px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.plane-list__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.plane-list__item + .plane-list__item::before {
+    content: "";
+    display: block;
+    margin: 24px 0;
+    width: 255px;
+    height: 1px;
+    background-color: $gray-text;
+}
+
+.plane-list__link {
+    display: flex;
+    text-decoration: none;
+    &:hover * {
+        color: $gray-text;
+    }
+    
+    &:active * {
+        color: $black-text;
+    }
+}
+
+.plane-list__stat {
+    margin: 0;
+    margin-right: 24px;
+    padding: 0;
+    font-size: 24px;
+    color: #CDCECD;
+}
+
+.plane-list__heading {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #ADB0B2;
+}
+
+
+/* My plane */
+
+.my-plane-right {
+    width: 730px;
+}
+
+.my-plane-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.my-plane-list__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+}
+
+.my-plane-list__heading::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 12px;
+    background-image: url("../images/label-bottom.svg");
+    background-repeat: no-repeat;
+}
+
+.my-plane-list__input-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.my-plane-list__label-area {
+    display: inline-block;
+    width: 228px;
+    height: 250px;
+    padding: 32px 28px;
+    background-color: #F4F1EB;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: #FDD6BA;
+        transition: background-color 0.5s ease;
+    }
+}
+
+.my-plane-list__subheading {
+    display: block;
+    margin-bottom: 24px;
+    color: $black-text;
+}
+
+input:checked + .my-plane-list__label-area > * {
+    color: #fff;
+}
+
+input:checked + .my-plane-list__label-area {
+    background-color: $blue-bg;
+}
+
+.my-plane-info {
+    margin-bottom: 40px;
+    padding: 27px 64px;
+    background-color: $black-bg;
+}
+
+.my-plane-info__heading {
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.my-plane-info__desc {
+    margin: 0;
+    font-size: 24px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.my-plane-info__text {
+    color: $blue-bg;
+}
+
+.my-plane-btn {
+    margin-left: auto;
+    border: none;
+}

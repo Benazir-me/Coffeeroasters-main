@@ -1,0 +1,30 @@
+.about-us-container {
+    width: 1280px;
+    padding: 85px 137px;
+    background-image: url("../images/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 1280px 450px;
+    border-radius: 10px;
+}
+
+.about-us-info {
+    width: 445px;
+}
+
+.about-us__heading {
+    margin-bottom: 24px;
+    font-size: 40px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .about-us-container {
+      background-image: url("../images/about-bg@2x.jpg");
+  }
+} 
